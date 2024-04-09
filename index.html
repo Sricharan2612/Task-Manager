@@ -10,11 +10,21 @@
 <body>
     <div class="container">
         <div class="input-container">
-            <input type="text" name="taskInput" required="">
+            <input type="text" name="taskInput" required="" id="taskInput">
             <span class="input-placeholder">Enter your task</span>
-            <button>Add Task</button>
+            <select name="taskList" id="task-list">
+                <option value="#">select</option>
+                <option value="1">option 1</option>
+                <option value="2">option 2</option>
+                <option value="3">option 3</option>
+                <option value="4">option 4</option>
+                <option value="5">option 5</option>
+                <option value="6">option 6</option>
+            </select>
         </div>
-
+        <div class="add-btn">
+            <button onclick="addTask()">Add Task</button>
+        </div>
         <table>
             <caption>Task Schedule</caption>
             <thead>

@@ -19,12 +19,12 @@ width: 460px;
 height: 410px;
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: space-evenly;
 align-items: center;
 background-color: rgb(255, 255, 255);
 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
 border-radius: 20px;
-gap: 50px;
+margin: 15px 15px;
 }
 
 .input-container {
@@ -50,28 +50,47 @@ border-radius: 10px;
 .input-placeholder {
 position: absolute;
 left: 13px;
-bottom: 12px;
-font-size: 21px;
+bottom: 15px;
+font-size: 16px;
 pointer-events: none;
 transition: all 0.3s ease-out 0s;
 }
 
-.input-container > button {
+#task-list{
+    width: 120px;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
+}
+
+#task-list:focus{
+    border: 2px solid rgb(159, 104, 224);
+    
+}
+
+.add-btn{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.add-btn > button {
 background-color: rgb(159, 104, 224);
 color: rgb(255, 255, 255);
-margin-left: 13px;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
 font-size: 16px;
 cursor: pointer;
-border-width: 0px;
-border-style: initial;
-border-color: initial;
-border-image: initial;
+border: 0;
 border-radius: 10px;
 padding: 14px 30px;
+width: 90%;
 }
 
-.input-container > button:active {
+.add-btn  > button:active {
     transform: scale(0.98);
 }
 
